@@ -137,6 +137,106 @@
 									<span class="image main"><img src="images/lennossa.jpg" alt""/></span>
 									<span class="image main"><img src="images/joukkuekuva.jpg" alt="" /></span>
 									<span class="image main"><img src="images/tutorkuva.jpg" alt="" /></span>
+									<!DOCTYPE html>
+									<html>
+									<style>
+									* {
+									    box-sizing: border-box;
+									}
+
+									body {
+									    margin: 0;
+									    font-family: Arial;
+									}
+
+									.header {
+									    text-align: center;
+									    padding: 32px;
+									}
+
+									/* Create four equal columns that floats next to each other */
+									.column {
+									    float: left;
+									    width: 25%;
+									    padding: 10px;
+									}
+
+									.column img {
+									    margin-top: 12px;
+									}
+
+									/* Clear floats after the columns */
+									.row:after {
+									    content: "";
+									    display: table;
+									    clear: both;
+									}
+
+									/* Responsive layout - makes a two column-layout instead of four columns */
+									@media (max-width: 800px) {
+									    .column {
+									        width: 50%;
+									    }
+									}
+
+									/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+									@media (max-width: 600px) {
+									    .column {
+									        width: 100%;
+									    }
+									}
+									</style>
+									<body>
+
+									<!-- Header -->
+									<div class="header">
+									  <h1>Responsive Image Grid</h1>
+									  <p>Resize the browser window to see the responsive effect.</p>
+									</div>
+
+									<!-- Photo Grid -->
+									<div class="row">
+									  <div class="column">
+									  	<img src="images/lennossa.jpg" style="width:100%">
+									    <img src="images/bg2.jpg" style="width:100%">
+											<img src="images/lennossa.jpg" style="width:100%">
+									    <img src="images/joukkuekuva.jpg" style="width:100%">
+									  	<img src="images/lennossa.jpg" style="width:100%">
+											<img src="images/lennossa.jpg" style="width:100%">
+									    <img src="images/lentaja.jpg" style="width:100%">
+									  </div>
+									  <div class="column">
+											<img src="images/lennossa.jpg" style="width:100%">
+									    <img src="images/bg2.jpg" style="width:100%">
+											<img src="images/lennossa.jpg" style="width:100%">
+									    <img src="images/joukkuekuva.jpg" style="width:100%">
+									  	<img src="images/lennossa.jpg" style="width:100%">
+									    <img src="images/lentaja.jpg" style="width:100%">
+									  </div>
+									  <div class="column">
+											<img src="images/lennossa.jpg" style="width:100%">
+											<img src="images/bg2.jpg" style="width:100%">
+											<img src="images/lennossa.jpg" style="width:100%">
+											<img src="images/joukkuekuva.jpg" style="width:100%">
+											<img src="images/lennossa.jpg" style="width:100%">
+											<img src="images/lennossa.jpg" style="width:100%">
+											<img src="images/lentaja.jpg" style="width:100%">
+									  </div>
+									  <div class="column">
+											<img src="images/lennossa.jpg" style="width:100%">
+											<img src="images/bg2.jpg" style="width:100%">
+											<img src="images/lennossa.jpg" style="width:100%">
+											<img src="images/joukkuekuva.jpg" style="width:100%">
+											<img src="images/lennossa.jpg" style="width:100%">
+											<img src="images/lentaja.jpg" style="width:100%">
+									  </div>
+									</div>
+
+									</body>
+									</html>
+
+
+
 								</article>
 
 
@@ -417,6 +517,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://twitter.com/thealinaedit?lang=fi" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/alina.edit.7" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://fi.linkedin.com/in/alinasaaranto" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<!--	<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>-->
+						</ul>
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
