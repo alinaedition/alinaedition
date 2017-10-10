@@ -186,7 +186,7 @@
 									        width: 100%;
 									    }
 									}
-									/*test text above https://stackoverflow.com/questions/30871341/how-to-position-text-over-an-image-in-a-grid*/
+									/*test text above https://stackoverflow.com/questions/30871341/how-to-position-text-over-an-image-in-a-grid
 									.text {
 										  z-index: 100;
 										  position: absolute;
@@ -196,6 +196,17 @@
 										  left: 0;
 										  right: 0;
 										  bottom: 0;
+									}*/
+									/*https://jsfiddle.net/6k2Lhaje/7/*/
+									div.title {
+    									display: none;
+    									position: relative;
+									    text-align: center;
+									    top: -170px;
+										}
+
+									div.title:hover, a.wrapper:hover + div {
+									    display: block;
 									}
 									</style>
 									<body>
@@ -208,28 +219,27 @@
 									<!-- Photo Grid -->
 									<div class="row">
 									   <div class="column">
-											 <img src="images/lennossam.jpg" style="width:100%">
-											 <p class="text"> Paragliding</p>
-											 <img src="images/mystinen.jpg" style="width:100%">
-											<img src="images/lentajam.jpg" style="width:100%">
-											<p class="text"> Malmi Airport</p>
-									    <img src="images/saaret.jpg" style="width:100%">
+
+											 		<a class="wrapper">
+												 	<img src="images/lennossam.jpg" style="width:100%"></a>
+												 	<div class="title"><h1>Paragliding</h1></div>
+											<img src="images/mystinen.jpg" style="width:100%">
+
+													<a class="wrapper">
+													<img src="images/lentajam.jpg" style="width:100%"></a>
+													<div class="title"><h1>Malmi Airport</h1></div>
+										<img src="images/saaret.jpg" style="width:100%">
 									  </div>
 									  <div class="column">
 											<img src="images/macauminam.jpg" style="width:100%">
-											<p class="text"> Macau, China</p>
 											<img src="images/mettapieni.jpg" style="width:100%">
-											<p class="text"> Helsinki, hiking trail</p>
 											<img src="images/tutorm.jpg" style="width:100%">
-											<p class="text"> Physics guild</p>
-
 											<img src="images/putousm.jpg" style="width:100%">
 											<img src="images/taxim.jpg" style="width:100%">
 									  </div>
 									  <div class="column">
 											<img src="images/kavele2m.jpg" style="width:100%">
 											<img src="images/joukkuem.jpg" style="width:100%">
-											<p class="text"> Physics team</p>
 											<img src="images/lintutaidem.jpg" style="width:100%">
 											<img src="images/maisemavaellusm.jpg" style="width:100%">
 									  </div>
