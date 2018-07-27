@@ -28,7 +28,13 @@
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
-//Alina Edit: if ( -->"slow"); } asti
+//Alina Edit: start
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+//Alina Edit:end
 
 		$window.on('load', function() {
 			window.setTimeout(function() {
