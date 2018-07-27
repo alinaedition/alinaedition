@@ -28,17 +28,13 @@
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
-//Alina Edit: if ( -->"slow"); } asti 
+//Alina Edit: if ( -->"slow"); } asti
 
-			$window.on('load', function() {
-				if ($(".pre-loader").length > 0)
-				{
-						$(".pre-loader").fadeOut("slow");
-				}
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-loading');
+			}, 100);
+		});
 
 
 		// Fix: Placeholder polyfill.
