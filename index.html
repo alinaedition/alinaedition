@@ -33,7 +33,20 @@
 			onLoad: onLinkedInLoad
 		</script>
 
-
+<!-- FOR SPINNER jQuery-->
+		<script>
+		$(document).ready(function() {
+		//Preloader
+		$(window).on("load", function() {
+		preloaderFadeOutTime = 500;
+		function hidePreloader() {
+		var preloader = $('.spinner-wrapper');
+		preloader.fadeOut(preloaderFadeOutTime);
+		}
+		hidePreloader();
+		});
+		});
+		</script>
 
 
 
@@ -42,17 +55,11 @@
 	<body>
 
 <!-- SPINNER-->
-<div class="spinner circles">
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
-</div>
 
+<!--CSS Spinner-->
+<div class="spinner-wrapper">
+<div class="spinner"></div>
+</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
