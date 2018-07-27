@@ -1613,6 +1613,8 @@
 		.column img {
 		  margin-top: 8px;
 		  vertical-align: middle;
+			opacity: 0.8; /*added for hover Image grid*/
+    	cursor: pointer; /*added for hover Image grid*/
 		}
 
 		/* Responsive layout - makes a two column-layout instead of four columns */
@@ -1646,4 +1648,45 @@ if it's not present, don't show loader */
 	height: 100%;
 	z-index: 9999;
 	background: url(images/loader-128x/Preloader_1.gif) center no-repeat #fff;
+}
+
+
+/*making image grid expanding*/
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+/* Clear floats after the columns */
+/* Style the images inside the grid */
+
+
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }

@@ -4,6 +4,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+//Alinaedit: start HOVER image
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+//Alinaedit: end
+
 (function($) {
 
 	skel.breakpoints({
@@ -28,8 +44,8 @@
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
-//Alina Edit: start
-$window.on('load', function() {
+//Alina Edit: start SPINNER preparations
+$(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
