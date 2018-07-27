@@ -29,7 +29,7 @@
 			$body.addClass('is-loading');
 
 //Alina Edit: start
-$(window).load(function() {
+$window.on('load', function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
