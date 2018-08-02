@@ -27,11 +27,21 @@
 
 		<!-- Load the Linkedin API https://platform.linkedin.com/in.js-->
 
-		<script type="text/javascript" src="https://platform.linkedin.com/in.js">
+	<!-- 		<script type="text/javascript" src="https://platform.linkedin.com/in.js">
 		  api_key: 814abza1j55a63
 			authorize: true
-			onLoad: onLinkedInLoad
-		</script>
+		</script>-->
+
+
+		<script type="text/javascript" src="http://platform.linkedin.com/in.js?async=true"></script>
+		<script type="text/javascript">
+    IN.init({
+        onLoad: "myOnloadFunction"
+				api_key: 814abza1j55a63
+				authorize: true// any other parameters you'd normally put beneath the script element would be here
+    });
+</script>
+		<!-- 		onLoad: onLinkedInLoad-->
 
 <!-- FOR SPINNER jQuery-->
 
@@ -108,7 +118,7 @@
 								<h3>Personality </h3>
 
 								<p>I am outgoing and energetic person and but also like to wonder by myself in the nature.</p>
-								<p>My favorite leisure time activities include outdoor activities such as sailing, cycling, running, dragon boating and hiking, some of which you my spot in pics below. I also enjoy Ashtanga yoga, reading books and watching Finnish ice hockey.</p>
+								<p>My favorite leisure time activities include outdoor activities such as sailing, cycling, running, dragon boating and hiking, some of which you may spot in pics below. I also enjoy Ashtanga yoga, reading books and watching Finnish ice hockey.</p>
 								<p>Feel free to contact me!</p>
 
 
@@ -173,7 +183,7 @@
 									<br />
 									Technologies used: VensimPLE.</p>
 
-									<h3>Topic: Team lead for an festival<br /> </h3>
+									<h3>Topic: Team lead for a students' festival<br /> </h3>
 									<img src="images/sitsit.jpg" alt="" style="max-width:90%"/></span>
 									<p>	Organized the biggest evening event for +200 people during the Physics Festival.
 									I lead team of 10 people. Together we built everything from raw carrots to three meal dinner and reconstructed and decorated an empty venue to a dining hall with music and dance performances.<br />
@@ -224,7 +234,7 @@
 									 </div>
 
 									<h4>Hong Kong SAR</h4>
-									<p> Taken during my exchange year in this busy metropole. Hong Kong is surprisingly 75% covered by nature parks. </p>
+									<p> Taken during my exchange year in this busy metropole of 7 million people. Hong Kong is surprisingly 75% covered by nature parks. </p>
 									<div class="row">
 										<img src="images/taxim.jpg" style="width:100%;height:20%">
 									 		<div class="column">
@@ -265,8 +275,8 @@
 									<li>Business: China business, Strategy, Business Analytics</li>
 									<li>Technical: MySQL, GitHub, Scala, Eclipse</li>
 									<li>Webpage development: HTML5, CSS, Google Analytics</li>
-									<li>People skills: Project management, organizing events, communication, presentation skills,
-										endurance for hectic situations.</li>
+									<li>People skills: Project Management, Organizing Events, Communication, Presentation Skills
+										</li>
 								</ul>
 
 								<h3>Work</h3>
